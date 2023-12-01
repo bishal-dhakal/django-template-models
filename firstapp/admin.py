@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import *
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
-from .models import CustomUser
+from .models import CustomUser,Contact
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 
 # Register your models here.
@@ -80,3 +80,4 @@ class DealInline(admin.TabularInline):
 
 # admin.site.unregister(User)
 # admin.site.register(User, UserAdmin)
+admin.site.register(Contact)
